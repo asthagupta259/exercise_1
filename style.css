@@ -1,53 +1,55 @@
-#header
-{background-color: #eee;
-font-size: 50px;
-font-family: "Times New Roman", Times, serif;
-margin: 20px;
-text-align: center;
-height: 70px;
+body{
+    margin:0;
 }
 
-
-#page
-{
-
-
-background-size: 100% 100%;
+header{
+    background-color:#eee;
+    height:10vh;
+    font-size: 40px;
+    text-align: center;
+    padding-top:20px;
 }
 
-.bgimage
-{
+.parallax {
     background-image: url("bg.png");
-height : 500px;
+    min-height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .new_page{
+    height:1000px;
+    background-color:red;
+    font-size:36px;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
-.profileimage
-{
-    background-image: url("profile.jpg");
-height : 100px;
-width:100px;
-
-background-size: 100% 100%;
-margin-left:auto;
-margin-right:auto;
+.caption span.border {
+    background-color:transparent;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
-.but{
-    margin-left:auto;
-    margin-right:auto;
-    padding:120px;
-    padding-left:600px;
-    background-color: transparent;
+.profile{
+    width:17vw;
+    height:40vh;
 }
 
-.text{
-    padding:40px;
-    padding-left: 500px;
-}
 button{
-    border-radius:10px;
-    background:transparent;
-    height: 50px;
-    width:150px;
-    margin-left:-50px;
+    width:12vw;
+    height:8vh;
+    border-radius:3px;
+    background-color: transparent;
 }
